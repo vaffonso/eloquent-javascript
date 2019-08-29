@@ -5,9 +5,8 @@ const LoopingTriagle = require('./LoopingATriangle');
 const FizzBuzz = require('./FizzBuzz');
 const Chessboard = require('./Chessboard');
 
-// TODO import and check which exercise to run
-
 // console.log(chalk.redBright('Under construction 🚧 👷‍♂️'));
+console.log(chalk.yellowBright('Chapter 2 Exercises 🗂'));
 
 const questions = [
     {
@@ -26,7 +25,6 @@ const questions = [
         name: 'triagleSize',
         message: 'Enter size of triagle',
         initial: '7'
-      
     },
     {
         type: prev => prev == 2 ? 'list' : null,
