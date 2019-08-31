@@ -9,3 +9,9 @@ Book <https://www.amazon.com.br/Eloquent-JavaScript-3rd-Introduction-Programming
 - Looping a Triangle
 - FizzBuzz
 - Chessboard
+
+## Chapter 3 (`npm run chap3`)
+
+- Minimum
+- Is Even
+- Count Char
