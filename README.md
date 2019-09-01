@@ -15,3 +15,10 @@ Book <https://www.amazon.com.br/Eloquent-JavaScript-3rd-Introduction-Programming
 - Minimum
 - Is Even
 - Count Char
+
+## Chapter 4 (`npm run chap4`)
+
+- The Sum of a Range
+- Reversing an Array
+- A List
+- Deep Comparison
