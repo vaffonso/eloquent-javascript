@@ -7,10 +7,12 @@
     "chap2": "node ./exercises/chapter2/",
     "chap3": "node ./exercises/chapter3/",
     "chap4": "node ./exercises/chapter4/",
+    "chap5": "node ./exercises/chapter5/",
     "test": "mocha ./exercises/**/test.js",
     "test-chap2": "mocha ./exercises/chapter2/**/test.js",
     "test-chap3": "mocha ./exercises/chapter3/**/test.js",
     "test-chap4": "mocha ./exercises/chapter4/**/test.js",
+    "test-chap5": "mocha ./exercises/chapter5/**/test.js",
     "lint": "eslint exercises/"
   },
   "repository": {
