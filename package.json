@@ -13,6 +13,7 @@
     "test-chap3": "mocha ./exercises/chapter3/**/test.js",
     "test-chap4": "mocha ./exercises/chapter4/**/test.js",
     "test-chap5": "mocha ./exercises/chapter5/**/test.js",
+    "test-chap6": "mocha ./exercises/chapter6/**/test.js",
     "lint": "eslint exercises/"
   },
   "repository": {
