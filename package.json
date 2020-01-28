@@ -4,6 +4,8 @@
   "description": "Exercises and projects",
   "main": "index.js",
   "scripts": {
+    "prompt": "node ./prompt-test/",
+    "projects": "node --inspect ./projects/",
     "chap2": "node ./exercises/chapter2/",
     "chap3": "node ./exercises/chapter3/",
     "chap4": "node ./exercises/chapter4/",
@@ -14,7 +16,9 @@
     "test-chap4": "mocha ./exercises/chapter4/**/test.js",
     "test-chap5": "mocha ./exercises/chapter5/**/test.js",
     "test-chap6": "mocha ./exercises/chapter6/**/test.js",
-    "lint": "eslint exercises/"
+    "test-chap7": "mocha ./exercises/chapter7/**/test.js",
+    "lint": "eslint ./exercises ./projects",
+    "lint:fix": "eslint ./exercises ./projects --fix"
   },
   "repository": {
     "type": "git",
@@ -36,13 +40,23 @@
     "prompts": "^2.2.1"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
     "chai": "^4.2.0",
-    "eslint": "^6.2.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-config-wesbos": "0.0.19",
+    "eslint-plugin-html": "^5.0.5",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-standard": "^4.0.1",
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1"
   }
 }

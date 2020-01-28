@@ -1,5 +1,5 @@
 module.exports = { 
-    "extends": "eslint:recommended",
+    "extends": "wesbos",
     "env": {
         "es6": true,
         "node": true,
