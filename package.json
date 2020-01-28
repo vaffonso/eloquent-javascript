@@ -17,6 +17,7 @@
     "test-chap5": "mocha ./exercises/chapter5/**/test.js",
     "test-chap6": "mocha ./exercises/chapter6/**/test.js",
     "test-chap7": "mocha ./exercises/chapter7/**/test.js",
+    "test-chap8": "mocha ./exercises/chapter8/**/test.js",
     "lint": "eslint ./exercises ./projects",
     "lint:fix": "eslint ./exercises ./projects --fix"
   },
