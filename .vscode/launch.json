@@ -18,6 +18,12 @@
     },
     {
       "type": "node",
+      "request": "launch",
+      "name": "Promise all",
+      "program": "${workspaceFolder}/exercises/chapter11/PromiseAll/index.js"
+    },
+    {
+      "type": "node",
       "request": "attach",
       "restart": true,
       "protocol": "inspector",
