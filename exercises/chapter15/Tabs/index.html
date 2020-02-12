@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+  </head>
+  <body>
+    <tab-panel>
+      <div data-tabname="one">Tab one</div>
+      <div data-tabname="two">Tab two</div>
+      <div data-tabname="three">Tab three</div>
+    </tab-panel>
+    <script>
+      function asTabs(node) {
+        const children = Array.from(node.children).reverse();
+        for (const child of children) {
+          const el = document.createElement('button');
+          el.textContent = child.dataset.tabname;
+          el.name = child.dataset.tabname;
+          node.insertAdjacentElement('afterbegin', el);
+          child.style.display = 'none';
+        }
+      }
+
+      function showTab(tabName) {
+        const tabs = document.querySelectorAll('div[data-tabname]');
+        for (const tab of Array.from(tabs)) {
+          const tabBtn = document.querySelector(
+            `button[name=${tab.dataset.tabname}]`
+          );
+          debugger;
+          if (tab.dataset.tabname === tabName) {
+            tabBtn.style.color = 'pink';
+            tab.style.display = 'block';
+          } else {
+            tabBtn.style.color = 'black';
+            tab.style.display = 'none';
+          }
+        }
+      }
+
+      const tabs = document.querySelector('tab-panel');
+      asTabs(tabs);
+      tabs.addEventListener('click', event => {
+        if (event.target.tagName === 'BUTTON') {
+          const tabName = event.target.textContent;
+          //   const content = document.querySelector(`div[data-tabname="${tabName}"]`);
+          //   content.style.display = 'block';
+          //   debugger;
+          showTab(tabName);
+        }
+      });
+    </script>
+  </body>
+</html>
